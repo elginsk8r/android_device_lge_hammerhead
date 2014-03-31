@@ -40,7 +40,7 @@ LOCAL_SHARED_LIBRARIES := \
     libhidlbase \
     libutils \
     android.hardware.power@1.2 \
-    vendor.lineage.power@1.0
+    vendor.evervolv.power@1.0
 
 LOCAL_HEADER_LIBRARIES := \
     libhardware_headers

@@ -19,7 +19,7 @@
 
 #include <hidl/MQDescriptor.h>
 #include <hidl/Status.h>
-#include <vendor/lineage/fastcharge/1.0/IFastCharge.h>
+#include <vendor/evervolv/fastcharge/1.0/IFastCharge.h>
 
 namespace vendor {
 namespace lineage {
@@ -35,8 +35,7 @@ using ::android::hardware::hidl_vec;
 using ::android::hardware::Return;
 using ::android::hardware::Void;
 
-using ::vendor::lineage::fastcharge::V1_0::IFastCharge;
-
+using ::vendor::evervolv::fastcharge::V1_0::IFastCharge;
 
 struct FastCharge : public IFastCharge {
     FastCharge();

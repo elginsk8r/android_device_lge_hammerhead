@@ -31,13 +31,13 @@ LOCAL_SHARED_LIBRARIES := \
     libcutils \
     libhidlbase \
     libutils \
-    vendor.lineage.fastcharge@1.0
+    vendor.evervolv.fastcharge@1.0
 
-LOCAL_MODULE := vendor.lineage.fastcharge@1.0-service.hh
-LOCAL_INIT_RC := vendor.lineage.fastcharge@1.0-service.hh.rc
+LOCAL_MODULE := vendor.evervolv.fastcharge@1.0-service.hh
+LOCAL_INIT_RC := vendor.evervolv.fastcharge@1.0-service.hh.rc
 LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_MODULE_TAGS := optional
-LOCAL_VINTF_FRAGMENTS := vendor.lineage.fastcharge@1.0-service.hh.xml
+LOCAL_VINTF_FRAGMENTS := vendor.evervolv.fastcharge@1.0-service.hh.xml
 LOCAL_VENDOR_MODULE := true
 
 include $(BUILD_EXECUTABLE)

@@ -1,0 +1,4 @@
+allow hal_evervolv_fastcharge_default sysfs_fastcharge_switch:dir r_dir_perms;
+allow hal_evervolv_fastcharge_default sysfs_fastcharge_switch:file rw_file_perms;
+
+set_prop(hal_evervolv_fastcharge, fastcharge_prop)

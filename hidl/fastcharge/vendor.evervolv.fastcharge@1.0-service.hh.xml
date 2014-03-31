@@ -1,6 +1,6 @@
 <manifest version="1.0" type="device">
     <hal format="hidl">
-        <name>vendor.lineage.fastcharge</name>
+        <name>vendor.evervolv.fastcharge</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
