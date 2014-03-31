@@ -137,6 +137,7 @@ MALLOC_IMPL := dlmalloc
 endif
 
 -include vendor/lge/hammerhead/BoardConfigVendor.mk
+-include device/lge/hammerhead/BoardConfigEV.mk
 
 # Enable Minikin text layout engine (will be the default soon)
 USE_MINIKIN := true
