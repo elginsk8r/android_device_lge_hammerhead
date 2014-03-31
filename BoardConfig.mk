@@ -147,6 +147,7 @@ USE_CLANG_PLATFORM_BUILD := true
 TARGET_FS_CONFIG_GEN += device/lge/hammerhead/config.fs
 
 -include vendor/lge/hammerhead/BoardConfigVendor.mk
+-include device/lge/hammerhead/BoardConfigEV.mk
 
 # Enable Minikin text layout engine (will be the default soon)
 USE_MINIKIN := true
