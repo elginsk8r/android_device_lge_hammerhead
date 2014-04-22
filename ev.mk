@@ -28,6 +28,9 @@ $(call inherit-product, $(SRC_EVERVOLV_DIR)/config/dictionaries/intl.mk)
 # Hot reboot
 PRODUCT_PACKAGE_OVERLAYS += $(SRC_EVERVOLV_DIR)/overlay/hot_reboot
 
+# 1080p
+PRODUCT_PACKAGE_OVERLAYS += $(SRC_EVERVOLV_DIR)/overlay/1080p
+
 # Extra overlay for Evervolv
 PRODUCT_PACKAGE_OVERLAYS += device/lge/hammerhead/overlay_ev
 
