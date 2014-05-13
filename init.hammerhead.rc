@@ -218,6 +218,13 @@ on post-fs-data
     chmod 664 /sys/devices/system/cpu/cpu3/online
     write /dev/cpuctl/apps/cpu.notify_on_migrate 1
 
+    chown root system /sys/class/timed_output/vibrator/amp
+    chmod 0664 /sys/class/timed_output/vibrator/amp
+    restorecon /sys/class/timed_output/vibrator/amp
+
+    chown system system /sys/android_touch/sweep2wake
+    chown system system /sys/android_touch/doubletap2wake
+
 on charger
     # Booting modem
     wait /dev/block/platform/msm_sdcc.1/by-name/modem

@@ -1,3 +1,6 @@
+#Device Settings
+BOARD_DEVICE_SETTINGS := device/lge/hammerhead/DeviceSettings
+
 # Disable Modules
 TARGET_KERNEL_NO_MODULES := true
 
