@@ -9,3 +9,6 @@ TARGET_KERNEL_CONFIG := evervolv_hammerhead_defconfig
 
 # Flags
 BOARD_SUPPRESS_SECURE_ERASE := true
+
+# TWRP
+DEVICE_RESOLUTION := 1080x1920
