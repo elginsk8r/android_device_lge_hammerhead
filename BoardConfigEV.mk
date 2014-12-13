@@ -1,6 +1,9 @@
 # Disable Modules
 TARGET_KERNEL_NO_MODULES := true
 
+# Ion
+TARGET_USE_ION_COMPAT := true
+
 # Kernel
 BUILD_KERNEL := true
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
