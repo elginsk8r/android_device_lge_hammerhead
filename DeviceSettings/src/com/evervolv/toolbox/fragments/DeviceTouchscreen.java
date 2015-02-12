@@ -4,10 +4,10 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.os.Bundle;
-import android.preference.CheckBoxPreference;
 import android.preference.Preference;
 import android.preference.PreferenceManager;
 import android.preference.PreferenceScreen;
+import android.preference.SwitchPreference;
 import android.util.Log;
 
 import com.evervolv.toolbox.R;
@@ -18,11 +18,11 @@ public class DeviceTouchscreen extends DeviceSettingFragment {
 
     private static final String KEY_SWEEP_TO_WAKE = "pref_sweep_to_wake";
     private static final String SWEEP_2_WAKE_FILE = "/sys/android_touch/sweep2wake";
-    private CheckBoxPreference mSweep2Wake;
+    private SwitchPreference mSweep2Wake;
 
     private static final String KEY_DBLTAP_TO_WAKE = "pref_doubletap_to_wake";
     private static final String DBLTAP_2_WAKE_FILE = "/sys/android_touch/doubletap2wake";
-    private CheckBoxPreference mDbltap2Wake;
+    private SwitchPreference mDbltap2Wake;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -31,10 +31,10 @@ public class DeviceTouchscreen extends DeviceSettingFragment {
         Resources res = getResources();
         addPreferencesFromResource(R.xml.device_touchscreen);
 
-        mSweep2Wake = (CheckBoxPreference) findPreference(KEY_SWEEP_TO_WAKE);
+        mSweep2Wake = (SwitchPreference) findPreference(KEY_SWEEP_TO_WAKE);
         mSweep2Wake.setEnabled(isSweep2WakeSupported() && Toolbox.isEnabled(getActivity()));
 
-        mDbltap2Wake = (CheckBoxPreference) findPreference(KEY_DBLTAP_TO_WAKE);
+        mDbltap2Wake = (SwitchPreference) findPreference(KEY_DBLTAP_TO_WAKE);
         mDbltap2Wake.setEnabled(isDbltap2WakeSupported() && Toolbox.isEnabled(getActivity()));
     }
 

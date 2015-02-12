@@ -20,13 +20,13 @@
     <PreferenceCategory
         android:title="@string/pref_sweep_to_wake_category_title">
 
-        <CheckBoxPreference
+        <SwitchPreference
             android:key="pref_sweep_to_wake"
             android:title="@string/pref_sweep_to_wake_title"
             android:summary="@string/pref_sweep_to_wake_summary"
             android:defaultValue="0" />
 
-        <CheckBoxPreference
+        <SwitchPreference
             android:key="pref_doubletap_to_wake"
             android:title="@string/pref_doubletap_to_wake_title"
             android:summary="@string/pref_doubletap_to_wake_summary"
