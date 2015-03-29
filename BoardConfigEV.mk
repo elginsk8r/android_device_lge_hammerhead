@@ -8,7 +8,7 @@ TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
 TARGET_KERNEL_CONFIG := evervolv_hammerhead_defconfig
 
 #TWRP
-DEVICE_RESOLUTION := 1080x1920
+TW_THEME := portrait_hdpi
 BOARD_HAS_NO_REAL_SDCARD := true
 RECOVERY_SDCARD_ON_DATA := true
 TW_NO_USB_STORAGE := false
