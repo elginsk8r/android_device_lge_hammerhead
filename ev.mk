@@ -14,7 +14,7 @@
 # limitations under the License.
 
 # Call this first so apn list is actually copied
-$(call inherit-product, $(SRC_EVERVOLV_DIR)/config/gsm.mk)
+$(call inherit-product, $(SRC_EVERVOLV_DIR)/config/apns.mk)
 
 # Product makefile
 $(call inherit-product, device/lge/hammerhead/aosp_hammerhead.mk)
@@ -25,15 +25,11 @@ $(call inherit-product, $(SRC_EVERVOLV_DIR)/config/common_full_phone.mk)
 # Pull all dictionaries
 $(call inherit-product, $(SRC_EVERVOLV_DIR)/config/dictionaries/intl.mk)
 
-# 1080p
-PRODUCT_PACKAGE_OVERLAYS += $(SRC_EVERVOLV_DIR)/overlay/1080p
-
 # Extra overlay for Evervolv
 PRODUCT_PACKAGE_OVERLAYS += device/lge/hammerhead/overlay_ev
 
-# Copy bootanimation
-PRODUCT_COPY_FILES += \
-    vendor/ev/prebuilt/1080p/media/bootanimation.zip:system/media/bootanimation.zip
+# Bootanimation
+BOOT_ANIMATION_SIZE := 1080p
 
 #
 # Evervolv product configuration.
