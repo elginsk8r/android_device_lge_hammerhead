@@ -29,11 +29,11 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.nfc</name>
+        <name>android.hardware.wifi</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-            <name>INfc</name>
+            <name>IWifi</name>
             <instance>default</instance>
         </interface>
     </hal>
