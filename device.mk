@@ -44,6 +44,8 @@ PRODUCT_COPY_FILES += \
     device/lge/hammerhead/twrp.fstab:recovery/root/etc/twrp.fstab
 
 PRODUCT_COPY_FILES += \
+    device/lge/hammerhead/init.hammerhead.power.rc:root/init.recovery.hammerhead.rc \
+    device/lge/hammerhead/init.hammerhead.power.rc:root/init.hammerhead.power.rc \
     device/lge/hammerhead/init.hammerhead.rc:root/init.hammerhead.rc \
     device/lge/hammerhead/init.hammerhead.usb.rc:root/init.hammerhead.usb.rc \
     device/lge/hammerhead/fstab.hammerhead:root/fstab.hammerhead \
