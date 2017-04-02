@@ -208,7 +208,7 @@ static void power_hint( __attribute__((unused)) struct power_module *module,
 
         case POWER_HINT_LOW_POWER:
              pthread_mutex_lock(&low_power_mode_lock);
-             if (*(int32_t *)data) {
+             if (data) {
                  low_power_mode = true;
                  sysfs_write(MIN_FREQ_LIMIT_PATH, LOW_POWER_MIN_FREQ);
                  sysfs_write(MAX_FREQ_LIMIT_PATH, LOW_POWER_MAX_FREQ);
