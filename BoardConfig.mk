@@ -156,6 +156,7 @@ USE_CLANG_PLATFORM_BUILD := true
 TARGET_FS_CONFIG_GEN += device/lge/hammerhead/config.fs
 
 DEVICE_MANIFEST_FILE := device/lge/hammerhead/manifest.xml
+DEVICE_MATRIX_FILE := device/lge/hammerhead/compatibility_matrix.xml
 
 -include vendor/lge/hammerhead/BoardConfigVendor.mk
 -include device/lge/hammerhead/BoardConfigEV.mk
