@@ -152,8 +152,6 @@ ifeq ($(USE_SVELTE_KERNEL),true)
 MALLOC_SVELTE := true
 endif
 
-USE_CLANG_PLATFORM_BUILD := true
-
 TARGET_FS_CONFIG_GEN += device/lge/hammerhead/config.fs
 
 DEVICE_MANIFEST_FILE := device/lge/hammerhead/manifest.xml
