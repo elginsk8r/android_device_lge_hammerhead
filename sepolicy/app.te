@@ -5,4 +5,4 @@ allowxperm { appdomain -isolated_app } gpu_device:chr_file ioctl { gpu_used_ioct
 auditallow { appdomain -isolated_app } gpu_device:chr_file ioctl;
 auditallowxperm { appdomain -isolated_app } gpu_device:chr_file ioctl gpu_unused_ioctls;
 
-allow appdomain sysfs_thermal:file r_file_perms;
+allow { appdomain -isolated_app } sysfs_thermal:file r_file_perms;
