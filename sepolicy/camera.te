@@ -9,6 +9,7 @@ init_daemon_domain(camera)
 allow camera video_device:dir search;
 allow camera { gpu_device video_device }:chr_file rw_file_perms;
 allow camera { surfaceflinger cameraserver mediaserver }:fd use;
+allow camera { untrusted_app_all priv_app }:fd use;
 hal_client_domain(camera, hal_graphics_allocator)
 
 allow camera self:capability { sys_nice };
