@@ -71,3 +71,6 @@ $(call add-clean-step, rm -f $(OUT_DIR)/target/product/hammerhead/system/build.p
 $(call add-clean-step, rm -rf $(OUT_DIR)/target/product/hammerhead/system/build.prop)
 $(call add-clean-step, rm -f $(OUT_DIR)/target/product/hammerhead/system/build.prop)
 $(call add-clean-step, find $(OUT_DIR)/target/product/hammerhead/ -name \*build.prop* -exec rm -rf {} \;)
+
+# Remove android.hardware.audio*@2.0 implementation
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/vendor/lib/hw/android.hardware.audio*@2.0-impl.so)
